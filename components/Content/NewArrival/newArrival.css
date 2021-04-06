@@ -1,0 +1,109 @@
+.newArrival {
+    padding: 60px 0 30px 0 ;
+    display: grid;
+    gap: 50px;
+    justify-content: center; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.newArrival span {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 38px;
+    line-height: 26px; 
+    color: #000000; 
+    text-align: center;
+}
+
+.newArrival .arrivalContent {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.newArrival .arrivalContent .man { 
+    width: 300px;
+    height: 450px; 
+    background-image: url('../../../assets/new_arrival.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    display: grid;
+    gap: 15px;
+    align-content: center;
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.newArrival .arrivalContent .man span {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 26px; 
+    color: #ffffff; 
+}
+
+.newArrival .arrivalContent .man h1 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 26px; 
+    color: #ffffff; 
+}
+
+.newArrival .arrivalContent .man a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 6px 32px;
+    justify-self: center;
+    border: none;
+    font-family: Rubik;
+    font-style: normal; 
+    font-size: 16px;  
+    color: #000000;
+    margin: 0;
+}
+
+.newArrival .shoesItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.newArrival .shoesItems .item {
+    display: grid; 
+    justify-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.newArrival .shoesItems .item span {
+    font-family: Rubik;
+    font-style: normal; 
+    font-size: 16px;  
+    color: #000000;
+    margin: 0;
+}
+
+.newArrival .shoesItems .item span:last-child {
+    font-weight: 600;
+    font-size: 18px; 
+}
+
+.newArrival .shoesItems .item  .contentico {
+    width: 180px;
+    border: 1px solid black;
+    height: 180px;
+    cursor: pointer;
+}
+

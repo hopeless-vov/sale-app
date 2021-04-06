@@ -1,0 +1,82 @@
+.navbarItems {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    padding: 10px 0;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.navbarItems .item {
+    position: relative;
+}
+
+.navbarItems .item .name {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 6px 10px; 
+}
+
+.navbarItems .item span {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navbarItems .item .name img { 
+    transition: 0.5s;
+}
+
+.navbarItems .item .name:hover {
+    border-radius: 4px 4px 0 0;
+}
+
+.navbarItems .item .name:hover img {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.navbarItems .item .name .select {
+    display: grid;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 98%;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 0;
+    transform: translateY(-82px);
+    transition: 0.5s;
+
+}
+
+.navbarItems .item .name:hover .select {
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(0px);
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.navbarItems .item .name .select span {
+    padding: 3px 7px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+.navbarItems .item .name .select span:last-child {
+    border: none;
+}
+
+.navbarItems .item .name .select span:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}

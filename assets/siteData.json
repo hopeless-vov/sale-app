@@ -1,0 +1,331 @@
+
+{
+"SiteData": {
+    "ContentType": "home",
+    "MainSlider": [
+    {
+        "PreHeading": "<span>NEW ARRIVAL</span>",
+        "Heading": "<span>50% OFF</span>",
+        "PostHeading": "<span>WOMEN`S <strong>SNEAKERS</strong></span>",
+        "Img": "/new_arrival.png",
+        "Link": "https://www.nike.com/w/new-womens-3n82yz5e1x6"
+    },
+    {
+        "PreHeading": "<span>FOR KIDS</span>",
+        "Heading": "<span>25% OFF</span>",
+        "PostHeading": "<span>BOYS <strong>T-SHIRTS</strong></span>",
+        "Img": "/boys_tshirts.png",
+        "Link": "https://www.nike.com/ca/w/boys-tops-t-shirts-1onraz9om13"
+    },
+    {
+        "PreHeading": "<span>FOOTBALL COLLECTION</span>",
+        "Heading": "<span>FASTER TOGETHER</span>",
+        "PostHeading": "<span>CHOOSE YOUR BOOT</span>",
+        "Img": "/football.png",
+        "Link": "https://www.nike.com/ca/football"
+    }
+    ],
+    "ArrivalBlock": {
+    "ProductsType": "shoes",
+    "Title": "BEST OFFER",
+    "Text": "#MEN",
+    "Link": "/men-offer",
+    "ButtonText": "Shop Now!"
+    },
+    "PartnersBlock": {
+    "CompaniesList": [
+        {
+        "ContentType": "company",
+        "Name": "Nike",
+        "Img": "/nike.png",
+        "Url": "/company/nike",
+        "Description": "Nike Company"
+        },
+        {
+        "ContentType": "company",
+        "Name": "Under Armor",
+        "Img": "/under-armor.png",
+        "Url": "/company/under-armor",
+        "Description": "Under Armor Company"
+        },
+        {
+        "ContentType": "company",
+        "Name": "Fila",
+        "Img": "/fila.png",
+        "Url": "/company/fila",
+        "Description": "Fila Company"
+        },
+        {
+        "ContentType": "company",
+        "Name": "New Balance",
+        "Img": "/new_balance.png",
+        "Url": "/company/new-balance",
+        "Description": "New Balance Company"
+        },
+        {
+        "ContentType": "company",
+        "Name": "Adidas",
+        "Img": "/adidas.png",
+        "Url": "/company/adidas",
+        "Description": "Adidas Company"
+        }
+    ]
+    },
+    "FooterBlock": {
+    "Logo": "/logo.png",
+    "Description": "Wildrun is always the best sneakers for your everyday activity. Our shop pleases you with sports shoe innovations since 2018. Be fashionable, be sporty, be with WILDRUN",
+    "SignUpText": "Stay up-to-date with our latest promotions, discounts, sales, and specials offers.",
+    "Socials": [
+        {
+        "Type": "twitter",
+        "Link": "https://twitter.com/nikestore?lang=en"
+        },
+        {
+        "Type": "pinterest",
+        "Link": "https://www.pinterest.com/nike/"
+        },
+        {
+        "Type": "instagram",
+        "Link": "https://www.instagram.com/nike/?hl=en"
+        },
+        {
+        "Type": "googleplus",
+        "Link": "https://www.nike.com/ca/"
+        },
+        {
+        "Type": "facebook",
+        "Link": "https://www.facebook.com/nike/"
+        }
+    ],
+    "PagesTags": [
+        "information",
+        "whybuyfromus",
+        "myaccount"
+    ]
+    },
+    "Children": {
+    "Products": {
+        "ContentType": "products",
+        "Children": {
+        "Product_1": {
+            "ContentType": "product",
+            "Type": "shoes",
+            "ShowOnMain": "1",
+            "Price": "180",
+            "Image": "/shoe_1.png",
+            "Url": "/products/1",
+            "Order": "3"
+        },
+        "Product_2": {
+            "ContentType": "product",
+            "Type": "shoes",
+            "ShowOnMain": "1",
+            "Price": "230",
+            "Image": "/shoe_2.png",
+            "Url": "/products/2",
+            "Order": "2"
+        },
+        "Product_3": {
+            "ContentType": "product",
+            "Type": "shoes",
+            "ShowOnMain": "1",
+            "Price": "160",
+            "Image": "/shoe_3.png",
+            "Url": "/products/3",
+            "Order": "5"
+        },
+        "Product_4": {
+            "ContentType": "product",
+            "Type": "shoes",
+            "ShowOnMain": "1",
+            "Price": "120",
+            "Image": "/shoe_4.png",
+            "Url": "/products/4",
+            "Order": "1"
+        },
+        "Product_5": {
+            "ContentType": "product",
+            "Type": "shoes",
+            "ShowOnMain": "0",
+            "Price": "150",
+            "Image": "/shoe_5.png",
+            "Url": "/products/5",
+            "Order": ""
+        },
+        "Product_6": {
+            "ContentType": "product",
+            "Type": "shoes",
+            "ShowOnMain": "1",
+            "Price": "190",
+            "Image": "/shoe_6.png",
+            "Url": "/products/6",
+            "Order": "4"
+        },
+        "Product_7": {
+            "ContentType": "product",
+            "Type": "shoes",
+            "ShowOnMain": "1",
+            "Price": "200",
+            "Image": "/shoe_7.png",
+            "Url": "/products/7",
+            "Order": "6"
+        },
+        "Product_8": {
+            "ContentType": "product",
+            "Type": "tshirt",
+            "ShowOnMain": "0",
+            "Price": "120",
+            "Image": "/tshirt_8.png",
+            "Url": "/products/8",
+            "Order": ""
+        }
+        }
+    },
+    "AboutUs": {
+        "ContentType": "infoPage",
+        "Title": "About Us",
+        "Url": "/about-us",
+        "FooterTag": [
+        "information"
+        ]
+    },
+    "CustomerService": {
+        "ContentType": "infoPage",
+        "Title": "Customer Service",
+        "Url": "/customer-service",
+        "FooterTag": [
+        "information"
+        ]
+    },
+    "TemplateSettings": {
+        "ContentType": "infoPage",
+        "Title": "Template Settings",
+        "Url": "/template-settings",
+        "FooterTag": [
+        "information"
+        ]
+    },
+    "PrivacyPolicy": {
+        "ContentType": "infoPage",
+        "Title": "Privacy Policy",
+        "Url": "/privacy-policy",
+        "FooterTag": [
+        "information",
+        "whybuyfromus"
+        ]
+    },
+    "OrdersAndReturns": {
+        "ContentType": "infoPage",
+        "Title": "Orders And Returns",
+        "Url": "/orders-and-returns",
+        "FooterTag": [
+        "information"
+        ]
+    },
+    "SearchTerms": {
+        "ContentType": "infoPage",
+        "Title": "Search Terms",
+        "Url": "/search-terms",
+        "FooterTag": [
+        "information"
+        ]
+    },
+    "ContactUs": {
+        "ContentType": "infoPage",
+        "Title": "Contact Us",
+        "Url": "/contact-us",
+        "FooterTag": [
+        "information"
+        ]
+    },
+    "AdvancedSearch": {
+        "ContentType": "infoPage",
+        "Title": "Advanced Search",
+        "Url": "/advanced-search",
+        "FooterTag": [
+        "information"
+        ]
+    },
+    "NewsletterSubscription": {
+        "ContentType": "infoPage",
+        "Title": "Newsletter Subscription",
+        "Url": "/newsletter-subscription",
+        "FooterTag": [
+        "information"
+        ]
+    },
+    "ShippingAndDelivery": {
+        "ContentType": "infoPage",
+        "Title": "Shipping And Delivery",
+        "Url": "/shipping-and-delivery",
+        "FooterTag": [
+        "whybuyfromus"
+        ]
+    },
+    "SecurePayment": {
+        "ContentType": "infoPage",
+        "Title": "Secure Payment",
+        "Url": "/secure-payment",
+        "FooterTag": [
+        "whybuyfromus"
+        ]
+    },
+    "Support": {
+        "ContentType": "infoPage",
+        "Title": "Support",
+        "Url": "/support",
+        "FooterTag": [
+        "whybuyfromus"
+        ]
+    },
+    "Guarantee": {
+        "ContentType": "infoPage",
+        "Title": "Guarantee",
+        "Url": "/guarantee",
+        "FooterTag": [
+        "whybuyfromus"
+        ]
+    },
+    "TermsAndConditions": {
+        "ContentType": "infoPage",
+        "Title": "Terms And Conditions",
+        "Url": "/terms-and-conditions",
+        "FooterTag": [
+        "whybuyfromus"
+        ]
+    },
+    "SignIn": {
+        "ContentType": "infoPage",
+        "Title": "Sign In",
+        "Url": "/sign-in",
+        "FooterTag": [
+        "myaccount"
+        ]
+    },
+    "ViewCart": {
+        "ContentType": "infoPage",
+        "Title": "View Cart",
+        "Url": "/view-cart",
+        "FooterTag": [
+        "myaccount"
+        ]
+    },
+    "MyWishlist": {
+        "ContentType": "infoPage",
+        "Title": "My Wishlist",
+        "Url": "/my-wishlist",
+        "FooterTag": [
+        "myaccount"
+        ]
+    },
+    "FAQ": {
+        "ContentType": "infoPage",
+        "Title": "FAQ",
+        "Url": "/faq",
+        "FooterTag": [
+        "myaccount"
+        ]
+    }
+    }
+}
+} 

@@ -1,0 +1,152 @@
+.footer {
+    background: #F4F4F4;
+}
+
+.footer .content {
+    max-width: 960px;
+    width: 100%;
+    margin: 0px auto; 
+    padding: 40px 0 10px 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr ;
+    gap: 30px;
+    align-items: start;
+}
+
+.footer .content .description {
+    display: grid;
+    gap: 10px;
+    justify-self: start;
+    text-align: center;
+}
+
+.footer .content .description span:first-child {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin: 10px 0px;
+    margin: 0;
+}
+
+.footer .content .description span:last-child {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px; 
+    color: #000000;
+    opacity: 0.7;
+}
+
+.footer .content .pagesTags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    text-align: center;
+}
+
+.footer .content .pagesTags .navigation {
+    display: grid;
+    gap: 15px;
+}
+
+.footer .content .pagesTags .navigation .title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px; 
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.footer .content .pagesTags .navigation span {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px; 
+    color: #000000;
+}
+
+.footer .content .singUp {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer .content .singUp span:first-child {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.footer .content .singUp span {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.footer .content .singUp .inp {
+    position: relative;
+}
+
+.footer .content .singUp .inp input {
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+    border-radius: 4px;
+    padding: 10px 30px 10px 10px;
+}
+
+.footer .content .singUp .inp img {
+    position: absolute;
+    width: 22px;
+    right: 35px;
+    top: 10px;
+    opacity: 0.5;
+}
+
+.footer .content .singUp .social {
+    display: grid;
+    gap: 10px;
+    justify-self: center;
+    border:1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+ a { 
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    transition: 0.5s;
+    padding: 3px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.08);
+}
+
+a {
+    border: none;
+}
+
+.footer .content .singUp .social a:hover {
+    color: #b52828;
+    transition: 0.5s;
+    opacity: 0.5;
+}

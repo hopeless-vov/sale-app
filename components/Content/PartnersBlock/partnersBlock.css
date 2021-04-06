@@ -1,0 +1,65 @@
+.partnersBlock {
+    padding: 40px 0; 
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partnersBlock div { 
+    position: relative;
+}
+
+.partnersBlock div img {
+    width: 106px;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: 0.5s;
+}
+
+.partnersBlock div:hover .tooltiptext {
+    visibility: visible;
+}
+
+.partnersBlock div img:hover { 
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+.partnersBlock div .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.partnersBlock div .tooltiptext span {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px; 
+    color: #ffffff; 
+    text-align: center;
+}
+
+.partnersBlock div .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+ 

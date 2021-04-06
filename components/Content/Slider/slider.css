@@ -1,0 +1,95 @@
+.slider {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    height: 700px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.slider .items {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 40px; 
+    grid-column: 2;
+    justify-content: space-between;
+}
+
+.slider .items .dots {
+    display: grid;
+    gap: 20px;
+}
+
+.slider .items .dots .dot {
+    width: 10px;
+    height: 10px;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.slider .items .dots .dot:hover {
+    background-color: #ffffff;
+    opacity: 0.7;
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+
+.slider .items .content {
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 150px; 
+}
+
+.slider .items .content span {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px; 
+    color: #ffffff;
+}
+
+.slider .items .content .mainText {
+    display: grid;
+    gap: 10px;
+}
+
+.slider .items .content .mainText span {
+    font-family: Rubik;
+    font-style: normal; 
+    font-size: 36px;  
+    color: #ffffff;
+    margin: 0;
+}
+
+.slider .items .content .mainText h1 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;  
+    color: #ffffff;
+    margin: 0;
+}
+
+.slider .items .content a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 6px 32px;
+    justify-self: center;
+    border: none;
+    font-family: Rubik;
+    font-style: normal; 
+    font-size: 16px;  
+    color: #000000;
+    margin: 0;
+}

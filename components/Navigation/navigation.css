@@ -1,0 +1,19 @@
+.navigation {
+    display: grid;
+}
+
+.navigation .logo {
+    display: grid;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navigation .logo h1{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px; 
+    color: #000000;
+    margin: 10px 0px;
+}
