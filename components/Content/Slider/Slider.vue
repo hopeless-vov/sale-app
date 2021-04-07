@@ -1,20 +1,25 @@
 <template>
-    <div :style="{ backgroundImage: 'url(' + image + ')' }" class="slider"> 
+<div class="slide">  
+    <div class="navigation">
+        <div :style="counter === index ? 'background-color: #ffffff;' : ''" v-for="(dot, index) in mainSlider" @click="changeBack(index)" :key="dot.id" class="dot"></div>
+    </div>
+    <div 
+        v-for="slideItem in  mainSlider" 
+        :key="slideItem.id" 
+        :style="{ backgroundImage: 'url(' + require(  '../../../assets' + slideItem.Img ) + ')',  transform: 'translateY('+deg+'px)'} " 
+        class="slider"> 
         <div class="items">
             <div class="content">
-                <span v-html="PreHeading"></span>
+                <span v-html="slideItem.PreHeading"></span>
                 <div class="mainText">
-                    <h1 v-html="heading"></h1>
-                    <span v-html="PostHeading"></span>
+                    <h1 v-html="slideItem.Heading"></h1>
+                    <span v-html="slideItem.PostHeading"></span>
                 </div>
-                <a :href= link >SHOP NOW!</a>
-            </div>
-            <div class="dots">
-                <div :style="counter === index ? 'background-color: #ffffff' : ''" @click="changeBack(index)" v-for="(dot,index) in length" :key="dot.index" class="dot"> 
-                </div>
-            </div>
+                <a :href= slideItem.Link >SHOP NOW!</a>
+            </div> 
         </div>  
-    </div> 
+    </div>  
+</div>
 </template>
 
 
@@ -22,38 +27,24 @@
 import data from '../../../assets/siteData.json';
 export default {
     data() {
-        return {
-            heading: '',
-            link: '',
-            counter: 0, 
-            image: '',
-            PreHeading: '',
-            PostHeading: '', 
-            length: 0
+        return { 
+            counter: 0,    
+            mainSlider: [],
+            deg: 0
         }
     },
-    mounted() {
-        this.showInfo();
-        this.length = data.SiteData.MainSlider;
+    mounted() {  
+        this.mainSlider = data.SiteData.MainSlider;
+        setInterval(() => this.changeBack(this.moveItems()), 3000);
     },
-    methods: {  
-        changeBack(id) { 
-            this.counter = id
-            let info = data.SiteData.MainSlider[id]
-            this.heading = info.Heading;
-            this.link = info.Link
-            this.image = require("../../../assets"+ info.Img);
-            this.PreHeading = info.PreHeading
-            this.PostHeading = info.PostHeading;
+    methods: {   
+        changeBack(id) {  
+            this.counter = id;
+            this.deg = -850 * id; 
         },
-        showInfo() {
-            let info = data.SiteData.MainSlider[0]
-            this.counter = 0
-            this.heading = info.Heading;
-            this.link = info.Link
-            this.image = require("../../../assets"+ info.Img);
-            this.PreHeading = info.PreHeading
-            this.PostHeading = info.PostHeading;
+        moveItems() {
+            this.counter < this.mainSlider.length -1 ? this.counter++ : this.counter = 0;
+            return this.counter; 
         }
     }
 }

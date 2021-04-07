@@ -1,84 +1,103 @@
-.slider {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%; 
-    height: 700px;
-    align-items: center;
+.slide {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    transition: 1s;
+    gap: 50px;
     
 }
 
-.slider .items {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    padding: 40px; 
-    grid-column: 2;
-    justify-content: space-between;
-}
-
-.slider .items .dots {
+.slide .navigation {
     display: grid;
     gap: 20px;
+    justify-self: end; 
+    position: fixed;  
+    z-index: 1;
+    right: 0;
+    top: 50%;
 }
 
-.slider .items .dots .dot {
-    width: 10px;
-    height: 10px;
+.slide .navigation .dot {
+    width: 15px;
+    height: 15px;
     border: 3px solid #ffffff;
     cursor: pointer;
     transform: rotate(45deg);
-    transition: 0.5s;
+    transition: 0.5s; 
+    margin-right: 40px;
+    border-radius: 5px;
 }
 
-.slider .items .dots .dot:hover {
+.slide .navigation .dot:hover {
     background-color: #ffffff;
     opacity: 0.7;
     transition: 0.5s;
     transform: rotate(180deg);
 }
 
-.slider .items .content {
+.slide .slider {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    height: 800px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    transition: 1s; 
+
+}
+
+.slide .slider .items {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 40px; 
+    grid-column: 2;
+    justify-content: space-between;
+} 
+
+.slide .slider .items .content {
     display: grid;
     gap: 30px;
     text-align: center;
     margin-bottom: 150px; 
 }
 
-.slider .items .content span {
+.slide .slider .items .content span {
     font-family: Rubik;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 28px; 
     color: #ffffff;
 }
 
-.slider .items .content .mainText {
+.slide .slider .items .content .mainText {
     display: grid;
     gap: 10px;
 }
 
-.slider .items .content .mainText span {
+.slide .slider .items .content .mainText span {
     font-family: Rubik;
     font-style: normal; 
-    font-size: 36px;  
+    font-size: 50px;  
     color: #ffffff;
     margin: 0;
 }
 
-.slider .items .content .mainText h1 {
+.slide .slider .items .content .mainText h1 {
     font-family: Rubik;
     font-style: normal;
     font-weight: 800;
-    font-size: 46px;  
+    font-size: 60px;  
     color: #ffffff;
     margin: 0;
 }
 
-.slider .items .content a {
+.slide .slider .items .content a {
     text-decoration: none;
     outline: none;
     cursor: pointer;
@@ -89,7 +108,7 @@
     border: none;
     font-family: Rubik;
     font-style: normal; 
-    font-size: 16px;  
+    font-size: 25px;  
     color: #000000;
     margin: 0;
 }
