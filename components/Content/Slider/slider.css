@@ -13,7 +13,7 @@
     display: grid;
     gap: 20px;
     justify-self: end; 
-    position: fixed;  
+    position: absolute;  
     z-index: 1;
     right: 0;
     top: 50%;
