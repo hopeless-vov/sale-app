@@ -38,25 +38,17 @@ export default {
     },
     mounted() {
         this.getAllInfo();
-     },
+    },
     methods: {
         getAllInfo() { 
-            this.footerInfo = data.SiteData.FooterBlock;
-            console.log(this.footerInfo.Socials);
-            let info = data.SiteData.FooterBlock.PagesTags; 
-            for(let i = 0; i < info.length; i++) { 
-                this.footerItems[i] = {name : info[i], items :[]}
-            } 
-            let child = data.SiteData.Children; 
-            let item = []
-            for (let key in child) {
-                if(child.hasOwnProperty(key)){ 
-                    item.push(Object.values(child));
-                }
-            }   
-            let oneItem = item[0]; 
+            this.footerInfo = data.SiteData.FooterBlock; 
+            let info = data.SiteData.FooterBlock.PagesTags;
+            info.forEach((element,index) => { 
+                this.footerItems[index] = {name : element, items :[]}
+            }); 
+            let child = data.SiteData.Children;  
+            let oneItem = Object.values(child); 
             for(let i = 1; i < oneItem.length; i++) {   
-                    
                 for(let y = 0; y < this.footerItems.length; y++) {  
                         if(this.footerItems[y].name === oneItem[i].FooterTag[0]) { 
                         this.footerItems[y].items.push(oneItem[i])

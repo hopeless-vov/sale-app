@@ -9,7 +9,7 @@
             </div>
             <div class="shoesItems">
                 <div v-show="Number(product.ShowOnMain)" :style="{order: product.Order }" v-for="product in products" :key="product.id" class="item">
-                    <img  class="contentico" :src="require('../../../assets/Shoes'+product.Image)" alt="">
+                    <img class="contentico" :src="require('../../../assets/Shoes'+product.Image)" alt="">
                     <span>{{product.Type}}</span>
                     <span class="price">{{product.Price}}</span>
                 </div>
