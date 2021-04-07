@@ -51,7 +51,7 @@
 
 .footer .content .pagesTags .navigation {
     display: grid;
-    gap: 15px;
+    gap: 5px;
 }
 
 .footer .content .pagesTags .navigation .title {
@@ -68,7 +68,7 @@
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 16px; 
     color: #000000;
 }
@@ -113,22 +113,28 @@
 .footer .content .singUp .inp img {
     position: absolute;
     width: 22px;
-    right: 35px;
+    right: 10px;
     top: 10px;
     opacity: 0.5;
 }
 
 .footer .content .singUp .social {
-    display: grid;
+    display: flex;
     gap: 10px;
-    justify-self: center;
-    border:1px solid rgba(0, 0, 0, 0.08);
+    justify-self: center; 
     width: 100%;
     justify-items: center;
     border-radius: 10px;
+    justify-content: space-between;
+} 
+
+.footer .content .singUp .social a:hover {
+    color: #b52828;
+    transition: 0.5s;
+    opacity: 0.5;
 }
 
- a { 
+.footer .content .singUp .social a { 
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -139,14 +145,9 @@
     transition: 0.5s;
     padding: 3px;
     border-bottom:1px solid rgba(0, 0, 0, 0.08);
+    width: 20px; 
 }
 
-a {
-    border: none;
-}
-
-.footer .content .singUp .social a:hover {
-    color: #b52828;
-    transition: 0.5s;
-    opacity: 0.5;
+a svg{
+    width: 20px; 
 }

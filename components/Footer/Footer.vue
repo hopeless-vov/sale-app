@@ -19,7 +19,9 @@
                     <img src="@/assets/letter.png" alt="">
                 </div>
                 <div class="social">
-                    <a v-for="social in footerInfo.Socials" :key="social.id" :href="social.Link">{{social.Type}}</a>
+                    <a v-for="social in footerInfo.Socials" :href="social.Link" :key="social.id" >
+                        <img :src="require('../../assets/social/'+ social.Type + '.svg')" :alt="social.Type"> 
+                    </a>
                 </div>
             </div>
         </div>
@@ -38,8 +40,9 @@ export default {
         this.getAllInfo();
      },
     methods: {
-        getAllInfo() {
+        getAllInfo() { 
             this.footerInfo = data.SiteData.FooterBlock;
+            console.log(this.footerInfo.Socials);
             let info = data.SiteData.FooterBlock.PagesTags; 
             for(let i = 0; i < info.length; i++) { 
                 this.footerItems[i] = {name : info[i], items :[]}
